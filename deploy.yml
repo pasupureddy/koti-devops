@@ -1,0 +1,20 @@
+---
+- hosts: tomcat
+  become: true
+
+  tasks: 
+   - name: check connectivity
+     ping:
+
+ #  - name: move file to /tmp location
+ #    command: sudo mv  /var/lib/jenkins/workspace/myfirstjob/target/*.war /tmp/hello.war     
+ #    delegate_to: 127.0.0.1
+
+   - name: copy war file to tomcat server
+     copy: 
+       src: /tmp/hello.war
+       dest: /usr/share/tomcat/webapps/hello.war
+       remote_src: no
+  
+   - name: restart tomcat service
+     shell: service tomcat restart 
