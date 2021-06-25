@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>Koti-devops</finalName>
+    <finalName>docker-demo</finalName>
   </build>
 </project>
