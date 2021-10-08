@@ -1,20 +1,16 @@
 ---
 - hosts: tomcat
-  become: true
-
-  tasks: 
-   - name: check connectivity
+  tasks:
+   - name: checking ping connectivity
      ping:
 
- #  - name: move file to /tmp location
- #    command: sudo mv  /var/lib/jenkins/workspace/myfirstjob/target/*.war /tmp/hello.war     
- #    delegate_to: 127.0.0.1
+   - name: copy file from jenkins to tomcat server
+     copy:
+      src: /tmp/hello.war
+      dest: /opt/tomcat/webapps 
 
-   - name: copy war file to tomcat server
-     copy: 
-       src: /tmp/hello.war
-       dest: /usr/share/tomcat/webapps/hello.war
-       remote_src: no
-  
-   - name: restart tomcat service
-     shell: service tomcat restart 
+   - name: stop tomcat service
+     shell: service tomcat stop
+
+   - name: start tomcat service
+     shell: service tomcat start
