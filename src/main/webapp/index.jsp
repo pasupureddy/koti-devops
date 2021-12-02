@@ -41,7 +41,7 @@ out.println("				<div class=\"col-md-12 text-center st-header-content\">");
 out.println("					<div class=\"logo\"><a href=\"\"><img src=\"images/logo.png\" alt=\"\"></a></div>");
 out.println("					<div class=\"st-header-title\">");
 out.println("						<h2>Welcome <span>Azure DevOps Demo </span></h2>");
-out.println("						<p> a demo webapplication <br /> created during devops training for Vishnu-team </p>");
+out.println("						<p> a demo webapplication <br /> created during devops training for SINDHU-TEAM </p>");
 out.println("					</div>");
 out.println("				</div>");
 out.println("			</div>");
