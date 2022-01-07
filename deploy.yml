@@ -6,8 +6,8 @@
 
    - name: copy file from jenkins to tomcat server
      copy:
-      src: /var/lib/jenkins/workspace/ci-cd-java-springboot-application/target/docker-demo.war
-      dest: /usr/share/tomcat/webapps
+      src: /var/lib/jenkins/workspace/ci-cd/target/sindhu-demo.war
+      dest: /opt/tomcat/webapps
 
    - name: stop tomcat service
      shell: service tomcat stop
