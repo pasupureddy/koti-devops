@@ -5,4 +5,4 @@
 [tomcat]
 # 13.76.190.150 ansible_connection=ssh ansible_ssh_user=azureuser ansible_ssh_pass=Password@1234@1234
 
-13.235.75.76 ansible_user=root
+13.233.96.49 ansible_user=root
