@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>sindhu-demo</finalName>
+    <finalName>anjiteam</finalName>
   </build>
 </project>
