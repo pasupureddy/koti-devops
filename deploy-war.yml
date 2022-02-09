@@ -1,0 +1,13 @@
+---
+- hosts: tomcat
+  become: true
+  tasks:
+   - name: copy the software artifact
+     copy:
+       src: /var/lib/jenkins/workspace/my-ci-cd/target/koti-demo.war
+       dest: /opt/tomcat/webapps
+
+   - name: restart tomcat service
+     shell: /opt/tomcat/bin/startup.sh
+
+  

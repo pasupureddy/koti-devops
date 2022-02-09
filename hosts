@@ -1,8 +1,7 @@
-
-127.0.0.1 ansible_connection=local
-
+[local]
+localhost ansible_connection=local
+192.168.0.1
 
 [tomcat]
-# 13.76.190.150 ansible_connection=ssh ansible_ssh_user=azureuser ansible_ssh_pass=Password@1234@1234
+10.0.0.5 ansible_user=azureuser
 
-13.233.96.49 ansible_user=root
